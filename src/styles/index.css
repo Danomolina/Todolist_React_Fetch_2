@@ -1,12 +1,56 @@
+/* index.css */
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .todo-list {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .input-container input {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .todos-container {
+    margin-top: 10px;
+  }
+  
+  .todos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notification {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .notification .btn-close {
+    margin-left: 10px;
+  }
+  
+  /* Doble de ancho */
+  .notification {
+    width: 1000px; /* Aumenta el ancho de la notificación */
+  }
+  
