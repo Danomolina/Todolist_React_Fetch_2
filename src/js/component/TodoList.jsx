@@ -75,7 +75,7 @@ const TodoList = () => {
       <div className="input-container">
         <input
           type="text"
-          placeholder="Ingresar Tarea"
+          placeholder="Ingresar tareas"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           className="form-control"
@@ -86,7 +86,7 @@ const TodoList = () => {
       </div>
       <div className="todos-container">
         <div className="todos-header bg-primary text-white p-2 mb-2">
-          <span>Names:</span>
+          <span>Tareas:</span>
           <i className="fas fa-search"></i>
         </div>
         {todos.length === 0 ? (

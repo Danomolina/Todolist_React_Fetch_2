@@ -8,7 +8,7 @@ body {
   }
   
   .todo-list {
-    max-width: 500px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
     background: #fff;
@@ -49,8 +49,8 @@ body {
     margin-left: 10px;
   }
   
-  /* Doble de ancho */
+
   .notification {
-    width: 1000px; /* Aumenta el ancho de la notificación */
+    width: 2000px; 
   }
   
