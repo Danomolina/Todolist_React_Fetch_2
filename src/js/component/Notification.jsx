@@ -1,17 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const Notification = ({ message, onClose }) => {
+const Notification = ({ text, type, onClose }) => {
   return (
-    <div className="alert alert-success alert-dismissible fade show" role="alert">
-      {message}
-      <button type="button" className="btn-close" onClick={onClose} aria-label="Close"></button>
+    <div className={`alert alert-${type} alert-dismissible fade show`} role="alert">
+      {text}
+      <button type="button" className="btn-close" aria-label="Close" onClick={onClose}></button>
     </div>
   );
 };
 
 Notification.propTypes = {
-  message: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   onClose: PropTypes.func.isRequired,
 };
 
