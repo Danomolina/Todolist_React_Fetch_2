@@ -15,14 +15,14 @@ const Home = () => {
       headers: { "Content-Type": "application/json" },
     })
       .then((response) => {
-        console.log("Fetch GET response:", response); // Verificar respuesta
+        console.log("Fetch GET response:", response); 
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }
         return response.json();
       })
       .then((data) => {
-        console.log("Fetched todos:", data); // Verificar datos
+        console.log("Fetched todos:", data); 
         if (Array.isArray(data.todos)) {
           setTodos(data.todos);
         } else {
@@ -53,26 +53,26 @@ const Home = () => {
       },
     })
       .then((response) => {
-        console.log("Fetch PUT response:", response); // Verificar respuesta
+        console.log("Fetch PUT response:", response); 
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }
         return response.json();
       })
       .then((data) => {
-        console.log("Updated todos:", data); // Verificar datos
+        console.log("Updated todos:", data); 
         setMessage({
           text: "Todos actualizados correctamente.",
           type: "success",
         });
       })
-      .catch((error) => {
+      /* .catch((error) => {
         console.error("Error updating todos:", error);
         setMessage({
           text: "Error al actualizar los todos.",
           type: "danger",
         });
-      });
+      }); */
   };
 
   const handleDelete = (index) => {
@@ -106,7 +106,7 @@ const Home = () => {
 
       <ul className="list-group">
         <h3 className="badge bg-primary my-1 py-2 d-flex">
-          <span>Buscar tarea</span>
+          <span>Buscar tareas</span>
           <span className="ms-auto">
             <i
               className="fas fa-search"
